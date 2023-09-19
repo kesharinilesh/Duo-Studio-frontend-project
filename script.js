@@ -44,21 +44,22 @@ var tl=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
     markers:true,
-    start:"top 31%",
-    end:"top 5",
+    start:"top 37%",
+    end:"top 0",
     scrub:3
     }    
 })
 
 
 tl.to(".page1 h1",{
-    x:-70
+    x:-1040
 },"anim")
 tl.to(".page1 h2",{
-    x:90
+    x:1280,
+    scrub:2
 },"anim")
 tl.to(".page1 video ",{
     // height:800,
-    // scrub:4
-    width:"110%",
+    // scrub:4,
+    width:"118%",
 }, "anim")

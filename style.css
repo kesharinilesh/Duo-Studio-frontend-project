@@ -15,12 +15,12 @@ html,body{
 }
 
 .page1{
-    min-height:100vh;
+    min-height:150vh;
     width:100%;
 }
 
 #nav{
-    height: 55px;
+    height: 3vw;
     width: 100%;
     /* background-color: red; */
     display:flex;
@@ -30,25 +30,25 @@ html,body{
 }
 
 #nav img{
-    height: 22px;
+    height: 1.5vw;
 }
 
 #nav-part2{
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:22px;
+    gap:1vw;
 }
 #nav #circle{
-    height:20px;
-    width:20px;
+    height:1vw;
+    width:1vw;
     border-radius: 50%;
     background-color:white;
     justify-content: left; 
 }
 
 #nav h4{
-    font-size: 14px;
+    font-size: 1.2vw;
     font-weight:500;
     text-transform: uppercase;
 }
@@ -58,26 +58,26 @@ html,body{
 }
 
 .page1 h1{
-    font-size:7vw;
+    font-size:8vw;
     font-weight: 300;
     font-family: 'PP Mori';
-    justify-content: left;
-    margin-top: 11vw;
-    margin-left:5vw;
+    /* justify-content: left; */
+    margin-top: 16vw;
+    margin-left:4vw;
 }
 .page1 h2{
-    font-size:7vw;
+    font-size:8vw;
     font-weight: 300;
     font-family: 'PP Mori';
-    margin-left:24vw;
+    margin-left:18vw;
     /* z-index: 10; */
 }
 
 .page1 video{
     /* height:600; */ 
     width: 80%;
-    /* justify-content: center; */
-    /* margin-top: 10vw; */
+    justify-content: center;
+    margin-left: 0.5vw;
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
@@ -86,6 +86,51 @@ html,body{
 }
 
 .page2{
-    min-height:100vh;
+    min-height:150vh;
     width:100%;
+    padding: 0 5vw;
+}
+
+.page2 h2{
+    font-size:6vw;
+    font-weight: 300;
+    /* color:red */
+}
+.page2-container{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 3vw 0;
+}
+.page2-left{
+    /* background-color: blue; */
+    width: 40%;
+}
+.page2-right{
+    /* background-color: blue; */
+    width: 28%;
+    margin-top: 2vw;
+}
+.page2-left h3{
+    font-size: 4vw;
+    font-weight: 300;
+    color: #a8a4a4;
+    line-height: 4vw;
+}
+.page2-right p{
+    font-size: 1.5vw;
+    color: #a8a4a4;
+}
+.page2-right button{
+    width: 100%;
+    font-weight:200;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #edbfff;
+    color: #010001;
+    margin-top: 20px;
 }
