@@ -86,13 +86,13 @@ html,body{
 }
 
 .page2{
-    min-height:150vh;
+    min-height:180vh;
     width:100%;
     padding: 0 5vw;
 }
 
 .page2 h2{
-    font-size:6vw;
+    font-size:7vw;
     font-weight: 300;
     /* color:red */
 }
@@ -107,21 +107,22 @@ html,body{
 }
 .page2-left{
     /* background-color: blue; */
-    width: 40%;
+    width: 35%;
 }
 .page2-right{
     /* background-color: blue; */
-    width: 28%;
-    margin-top: 2vw;
+    width: 25%;
+    margin-top: 1vw;
+    margin-right: 3vw;
 }
 .page2-left h3{
-    font-size: 4vw;
-    font-weight: 300;
+    font-size: 4.5vw;
+    font-weight: 200;
     color: #a8a4a4;
     line-height: 4vw;
 }
 .page2-right p{
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: #a8a4a4;
 }
 .page2-right button{
