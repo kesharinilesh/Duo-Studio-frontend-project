@@ -64,16 +64,20 @@ tl.to(".page1 video ",{
     width:"118%",
 }, "anim")
 
-// var tl2=gsap.timeline({
-//     scrollTrigger:{trigger:".page1 h1",
-//     scroller:".main",
-//     markers:true,
-//     start:"top -130%",
-//     end:"top -135%",
-//     scrub:3
-//     }    
-// })
-
-// tl2.to(".main",{
-//     backgroundColor: "#FFFFFF",
-// })
+var tl2=gsap.timeline({
+    scrollTrigger:{trigger:".page1 h1",
+    scroller:".main",
+    markers:true,
+    start:"top -285%",
+    end:"top -290%",
+    scrub:2.25
+    }    
+})
+tl2.to(".page2",{
+    // color: "#0F0D0D",
+    backgroundColor: "#FFFFFF",
+},"anim")
+tl2.to(".page3",{
+    // color: "#0F0D0D",
+    backgroundColor: "#FFFFFF",
+},"anim")
