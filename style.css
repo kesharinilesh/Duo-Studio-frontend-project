@@ -17,6 +17,7 @@ html,body{
     background-color: #edbfff;
     position: fixed;
     z-index: 9;
+    pointer-events: none;
     /* transition: background-image ease 0.5s;
     background-position: center;
     background-size:cover ; */
