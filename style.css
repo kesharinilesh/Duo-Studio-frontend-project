@@ -10,6 +10,20 @@ html,body{
     width:100%;
 }
 
+.cursor{
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #edbfff;
+    position: fixed;
+    z-index: 9;
+    /* transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover ; */
+    mix-blend-mode: difference;
+    /* transition: left ease-out 4s top ease-out 1s; */
+}
+
 .main{
     background-color: #010001;
 }
@@ -40,8 +54,8 @@ html,body{
     gap:1vw;
 }
 #nav #circle{
-    height:1vw;
-    width:1vw;
+    height:20px;
+    width:20px;
     border-radius: 50%;
     background-color:white;
     justify-content: left; 
@@ -93,6 +107,7 @@ html,body{
 }
 
 .page2 h2{
+    /* background-color: red; */
     font-size:7vw;
     font-weight: 300;
     /* color:red */
@@ -142,8 +157,10 @@ html,body{
     width:100%;
     padding: 5vw 5vw;
     /* background-color: #0F0D0D; */
+    /* border-bottom: 2px solid #010001; */
 }
 .page3 h2{
+    margin-top: 5vw;
     color:#0F0D0D;
     font-size:7vw;
     font-weight: 300;
@@ -162,25 +179,33 @@ html,body{
 }
 .page3-part1 img{
     margin-top: 300px;
-    height:800px;
+    height:38vw;
     width:100%;
+    object-fit: cover;
 }
 .page3-part1 #right{
     /* background-color: blue; */
-    height:700px;
+    height:600px;
     width:40%;
+    margin-top: -100px;
+}
+.page3-part1 video{
+    margin-left:9vw;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
 }
 .text h3{
-    font-size:40px;
+    font-size:2vw;
     font-weight:100;
     color: #0F0D0D;
-    margin-left:7vw;
+    margin-left:9vw;
     margin-top:1vw;
     /* margin-bottom: 0px; */
     line-height: 0.7;
 }
 .text span{
-    font-size:20px;
+    font-size:1vw;
     font-weight:50;
     color: #0F0D0D;
     /* line-height: 0; */
@@ -190,33 +215,26 @@ html,body{
 #left h3{
     margin-left:0;
 }
-.page3-part1 video{
-    margin-top: -100px;
-    margin-left:7vw;
-    height: 800px;
-    text-align: center;
-    /* width:40% */
-    content: fill;
-}
 
 .page3-part2{
-    padding: 5vw 5vw;
+    padding: 0vw 5vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    
 }
 .page3-part2 #left{
+    margin-left:80px;
     /* background-color: red; */
     margin-top: 40vw;
-    min-height:700px;
-    max-width:700px;
+    width:35%;
+    height:600px;
 }
-.page3-part2 video{
-    /* height: auto; */
-    /* margin:0 auto; */
-    /* min-height: 700px; */
-    width:100%;
-
+#left video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 .page3-part2 #right{
     /* background-color: blue; */
@@ -225,27 +243,32 @@ html,body{
     width:40%;
 }
 .page3-part2 img{
-    margin-top: 400px;
-    height:750px;
-    width:600px;
+    margin-top: 300px;
+    height:38vw;
+    width:30vw;
 }
-.text h3{
-    font-size:40px;
-    font-weight:100;
-    color: #0F0D0D;
-    margin-left:7vw;
-    margin-top:1vw;
-    /* margin-bottom: 0px; */
-    line-height: 0.7;
-}
-.text span{
-    font-size:20px;
-    font-weight:50;
-    color: #0F0D0D;
-    /* line-height: 0; */
-    /* margin-left:7vw; */
-    /* top:-20px; */
-}
+
 #left h3{
     margin-left:0;
+}
+.page3-part2 #right h3{
+    margin-left:0;
+}
+.page3-part2 h5{
+    margin-top: 16vw;
+    font-weight: 550;
+    font-size:1.25vw;
+    color: #010001;
+}
+.page3-part2 button{
+    background-color:#edbfff;
+    color:#010001;
+    font-size:1vw;
+    font-weight: 200;
+    border-radius: 50px;
+    border:none;
+    margin-top: 0.7vw;
+    width:35%;
+    height:25px;
+    /* padding:4px 0; */
 }

@@ -40,6 +40,17 @@ ScrollTrigger.refresh();
 }
 init();
 
+var crsr=document.querySelector(".cursor");
+// var main=document.querySelector(".main");
+document.addEventListener("mousemove",function(dets){
+    // console.log("hey");
+    crsr.style.left=dets.x-10+"px";
+    crsr.style.top=dets.y-10+"px";
+})
+
+
+
+
 var tl=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
@@ -69,7 +80,7 @@ var tl2=gsap.timeline({
     scroller:".main",
     markers:true,
     start:"top -285%",
-    end:"top -290%",
+    end:"top -286%",
     scrub:2.25
     }    
 })
