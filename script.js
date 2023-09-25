@@ -40,12 +40,12 @@ ScrollTrigger.refresh();
 }
 init();
 
-var crsr=document.querySelector(".cursor");
+const crsr=document.querySelector(".cursor");
 // var main=document.querySelector(".main");
 document.addEventListener("mousemove",function(dets){
     // console.log("hey");
-    crsr.style.left=dets.x-10+"px";
-    crsr.style.top=dets.y-10+"px";
+    crsr.style.left=dets.x-3+"px";
+    crsr.style.top=dets.y-3+"px";
 })
 
 
