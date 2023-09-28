@@ -48,9 +48,6 @@ document.addEventListener("mousemove",function(dets){
     crsr.style.top=dets.y-3+"px";
 })
 
-
-
-
 var tl=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
@@ -79,8 +76,8 @@ var tl2=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
     markers:true,
-    start:"top -285%",
-    end:"top -286%",
+    start:"top -273%",
+    end:"top -274%",
     scrub:2.25
     }    
 })
@@ -88,7 +85,45 @@ tl2.to(".page2",{
     // color: "#0F0D0D",
     backgroundColor: "#FFFFFF",
 },"anim")
+tl2.to(".page2-left h3",{
+    color: "#0F0D0D",
+},"anim")
+tl2.to(".page2-right p",{
+    color: "#0F0D0D",
+},"anim")
 tl2.to(".page3",{
     // color: "#0F0D0D",
     backgroundColor: "#FFFFFF",
+},"anim")
+
+var tl3=gsap.timeline({
+    scrollTrigger:{trigger:".page1 h1",
+    scroller:".main",
+    markers:true,
+    start:"top -565%",
+    end:"top -566%",
+    scrub:2.5,
+    }    
+})
+tl3.to(".page3",{
+    backgroundColor: "#010001",
+},"anim")
+tl3.to(".page3-part2 #right h3",{
+    color: "#fff",
+},"anim")
+tl3.to(".page3-part2 #right span",{
+    color: "#fff",
+},"anim")
+tl3.to(".page3-part2 #left h3",{
+    color: "#fff",
+},"anim")
+tl3.to(".page3-part2 #left span",{
+    color: "#fff",
+},"anim")
+tl3.to(".page3-part2 #seemore h5",{
+    color: "#fff",
+},"anim")
+
+tl3.to(".page4",{
+    backgroundColor: "#0F0D0D",
 },"anim")
