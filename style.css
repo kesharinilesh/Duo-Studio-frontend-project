@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'PP mori';
+    src: url(./ppmori.ttf);
+}
 *{
     margin:0;
     padding:0;
@@ -9,6 +13,7 @@ html,body{
     height:100%;
     width:100%;
     cursor:none;
+    
 }
 
 .cursor{
@@ -17,7 +22,7 @@ html,body{
     border-radius: 50%;
     background-color: #edbfff;
     position: fixed;
-    z-index: 8;
+    z-index: 102;
     pointer-events: none;
     /* transition: background-image ease 0.5s;
     background-position: center;
@@ -33,9 +38,48 @@ html,body{
 .page1{
     min-height:150vh;
     width:100%;
-    position:relative;
+    /* position:relative; */
     z-index:9;
+    padding-top: 16vw;
 }
+#purple{
+    height:100vh;
+    width:100%;
+    background-color:#edbfff;
+    z-index:98;
+    /* top:0; */
+    position: fixed;
+    opacity:0;
+    display:none;
+    /* align-items: center;
+    justify-content: center; */
+}
+/* #scroller {
+    display: inline-block;
+    width: 100%;
+    background-color: antiquewhite;
+    white-space: nowrap;
+    animation: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 100;
+}
+#scroller h4 {
+    display: inline;
+    font-size: 4vw;
+    /* margin-right: 10px;
+    margin-bottom: 80px; */
+    transition: all linear 0.5s;
+    color: black;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+} */
 
 #nav{
     height: 3vw;
@@ -45,6 +89,9 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding:0px 30px;
+    position:fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
 }
 
 #nav img{
@@ -75,12 +122,12 @@ html,body{
     border-bottom: 1.4px solid #fff;
 }
 
+
 .page1 h1{
     font-size:8vw;
     font-weight: 300;
     font-family: 'PP Mori';
     /* justify-content: left; */
-    margin-top: 16vw;
     margin-left:4vw;
 }
 .page1 h2{
@@ -88,6 +135,7 @@ html,body{
     font-weight: 300;
     font-family: 'PP Mori';
     margin-left:18vw;
+    margin-bottom: 4vw;
     /* z-index: 10; */
 }
 
@@ -165,7 +213,7 @@ html,body{
     /* background-color: #0F0D0D; */
     position:relative;
     z-index:9;
-    border-bottom: 2px solid #0F0D0D;
+    border-bottom: 2px solid #dadada;
 }
 .page3 h2{
     margin-top: 5vw;
@@ -182,20 +230,20 @@ html,body{
 }
 .page3-part1 #left{
     /* background-color: red; */
-    height:700px;
+    height:25vw;
     width:35%;
 }
 .page3-part1 img{
-    margin-top: 300px;
+    margin-top: 22vw;
     height:38vw;
     width:100%;
     object-fit: cover;
 }
 .page3-part1 #right{
     /* background-color: blue; */
-    height:600px;
+    height:37vw;
     width:40%;
-    margin-top: -100px;
+    margin-top: -6vw;
 }
 .page3-part1 video{
     margin-left:9vw;
@@ -232,11 +280,11 @@ html,body{
     
 }
 .page3-part2 #left{
-    margin-left:80px;
+    margin-left:8vw;
     /* background-color: red; */
-    margin-top: 40vw;
+    margin-top: 55vw;
     width:35%;
-    height:600px;
+    height:34vw;
 }
 #left video{
     width: 100%;
@@ -246,12 +294,12 @@ html,body{
 }
 .page3-part2 #right{
     /* background-color: blue; */
-    margin-top:-70px;
-    height:700px;
+    margin-top:18vw;
+    height:24vw;
     width:40%;
 }
 .page3-part2 img{
-    margin-top: 300px;
+    margin-top: 8vw;
     height:38vw;
     width:30vw;
 }
@@ -288,10 +336,12 @@ html,body{
     position:relative;
     z-index:9;
     /* margin-top: 10vw; */
-    padding-top:18vw;
+    padding-top:20vw;
+    border-bottom: 1.5px solid #dadada;
 }
 .elem{
     /* background-color: red; */
+    /* margin-bottom:10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +391,7 @@ html,body{
 }
 .text-div{
     /* background-color: #edbfff; */
-    height:6.6vw;
+    height:6.8vw;
     overflow:hidden;
 }
 .elem:hover h3{
@@ -355,6 +405,47 @@ html,body{
 }
 .page5{
     height:100vh;
+    width:100%;
+    background-color: #0F0D0D;
+    position:relative;
+    z-index:9;
+    padding: 8vw 3vw;
+}
+.page5 h2{
+    font-size:5vw;
+    font-weight:100;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+.page5 h2 span{
+    color:#edbfff;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1.5px solid #dadada;
+}
+.box h3{
+    font-size:1.5vw;
+    font-weight: 10;
+    line-height: 5vw;
+}
+.box:nth-last-child(1){
+    border-bottom: 1.5px solid #dadada;
+}
+.inner-box{
+    width:30%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+footer{
+    height:84vh;
     width:100%;
     background-color: #edbfff;
     position:relative;
