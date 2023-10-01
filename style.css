@@ -51,8 +51,8 @@ html,body{
     position: fixed;
     opacity:0;
     display:none;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
 }
 /* #scroller {
     display: inline-block;
@@ -63,12 +63,10 @@ html,body{
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 100;
-}
-#scroller h4 {
+} */
+/* #scroller h4 {
     display: inline;
     font-size: 4vw;
-    /* margin-right: 10px;
-    margin-bottom: 80px; */
     transition: all linear 0.5s;
     color: black;
 }
