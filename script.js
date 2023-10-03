@@ -51,7 +51,7 @@ document.addEventListener("mousemove",function(dets){
 var tl=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
-    markers:true,
+    // markers:true,
     start:"top 20%",
     end:"top -25%",
     scrub:3
@@ -75,7 +75,7 @@ tl.to(".page1 video ",{
 var tl2=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
-    markers:true,
+    // markers:true,
     start:"top -273%",
     end:"top -274%",
     scrub:2.25
@@ -99,7 +99,7 @@ tl2.to(".page3",{
 var tl3=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
-    markers:true,
+    // markers:true,
     start:"top -565%",
     end:"top -566%",
     scrub:2.5,
