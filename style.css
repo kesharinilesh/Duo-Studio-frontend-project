@@ -133,6 +133,7 @@ html,body{
     font-family: 'PP Mori';
     /* justify-content: left; */
     margin-left:4vw;
+    transform-origin: left;
 }
 .page1 h2{
     font-size:8vw;
@@ -140,6 +141,7 @@ html,body{
     font-family: 'PP Mori';
     margin-left:18vw;
     margin-bottom: 4vw;
+    transform-origin: left;
     /* z-index: 10; */
 }
 

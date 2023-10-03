@@ -48,6 +48,14 @@ document.addEventListener("mousemove",function(dets){
     crsr.style.top=dets.y-3+"px";
 })
 
+gsap.from(".page1 h1,.page1 h2", {
+    y: 10,
+    rotate: 10,
+    opacity: 0,
+    delay: 0.3,
+    duration: 0.7
+})
+
 var tl=gsap.timeline({
     scrollTrigger:{trigger:".page1 h1",
     scroller:".main",
