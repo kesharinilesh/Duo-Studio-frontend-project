@@ -9,6 +9,10 @@
     font-family: 'PP Mori';
     color:#fff;
 }
+*::selection {
+    background-color: #edbfff;
+    color: #0F0D0D;
+}
 html,body{
     height:100%;
     width:100%;
@@ -24,6 +28,7 @@ html,body{
     position: fixed;
     z-index: 102;
     pointer-events: none;
+    transition: scale linear 0.2s;
     /* transition: background-image ease 0.5s;
     background-position: center;
     background-size:cover ; */
@@ -111,12 +116,12 @@ html,body{
 }
 
 #nav h4{
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight:500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
-#nav h4:nth-child(1){
+#nav span{
     border-bottom: 1.4px solid #fff;
 }
 
@@ -404,10 +409,11 @@ html,body{
 .page5{
     height:100vh;
     width:100%;
-    background-color: #0F0D0D;
+    background-color: #010001;
     position:relative;
     z-index:9;
     padding: 8vw 3vw;
+    border-bottom: 2px solid #dadada;
 }
 .page5 h2{
     font-size:5vw;
@@ -445,7 +451,28 @@ html,body{
 footer{
     height:84vh;
     width:100%;
-    background-color: #edbfff;
+    background-color: #0F0D0D;
     position:relative;
     z-index:9;
+    display:flex;
+    padding:1.5vw 8vw;
+    justify-content: space-between;
+
+}
+footer h4{
+    font-size:4.5vw;
+    font-weight:300;
+    color: #edbfff;
+}
+
+#f{
+    margin-top:1vw;
+    height: 8vw;
+    width: 8vw;
+    font-size: 1vw;
+    font-weight: 100;
+    border-radius: 50%;
+    border-color: #010001;
+    background-color: #edbfff;
+    color:#0F0D0D;
 }

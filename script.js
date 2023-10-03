@@ -162,3 +162,17 @@ h4.forEach(function(elem){
         crsr.style.backgroundColor="#edbfff"
     })
 })
+
+var scale = document.querySelectorAll("#nav h4,#nav img,#circle, button,.page4 h3");
+scale.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 2;
+    // crsr.style.trasition=1;
+    crsr.style.color = "#0F0D0D";
+    });
+    elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #edbfff";
+    crsr.style.backgroundColor = "#edbfff";
+    });
+});
